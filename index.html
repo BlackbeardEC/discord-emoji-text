@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Discord emoji text - By BlackBeardEC</title>
+     <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="PATH">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+
+
+
+   <!-- Fixed navbar -->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">Discord emoji text</a>
+       </div>
+       <div id="navbar" class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+
+         </ul>
+       </div><!--/.nav-collapse -->
+     </div>
+   </nav>
+
+   <div class="container theme-showcase" role="main">
+
+     <!-- Main jumbotron for a primary marketing message or call to action -->
+     <div class="jumbotron">
+       <h1>Discord emoji text</h1>
+       <p>This is a Discord emoji text converter. Enter your text in the box bellow and click the button. Your text will be converted into emoji text to copy and paste into discord.</p>
+     </div>
+
+
+     <div class="page-header">
+       <h1>Enter Text Below</h1>
+     </div>
+     <p>
+       <form id="stuff">
+         <textarea id="things" rows="8" cols="100"></textarea>
+       </form>
+       <button type="button" class="btn btn btn-primary" onclick="emojiText()">Convert</button>
+    <div class="page-header">
+      <h1>Copy Pasta</h1>
+    </div>
+    <p id="demo"><textarea id="newthings" rows="8" cols="100"></textarea></p>
+
+       <script>
+        function emojiText() {
+          var poop = document.getElementById('things').value.toLowerCase().split('');
+          var text = "";
+          var newText = "";
+          var i;
+          for (i = 0; i < poop.length ;i++) {
+            if(poop[i] === ' '){
+              text += "  ";
+            }else{
+              text += ":regional_indicator_" + poop[i] + ": ";
+            }
+          }
+        document.getElementById("newthings").innerHTML = text;
+        }
+      </script>
+     </p>
+
+   </div> <!-- /container -->
+
+
+
+
+
+  <script
+  			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  			  crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ </body>
+
+ </html>
