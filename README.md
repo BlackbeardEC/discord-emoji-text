@@ -1,6 +1,6 @@
 ## Discord emoji text  
   
-Simple page with js to convert any text entered into emoji letters (:regional_indicator_a:) with propper spacing to look normal.  
+Simple page with js to convert any text entered into emoji letters (:regional_indicator_a:) with proper spacing to look normal.  
   
 ## Motivation  
   
