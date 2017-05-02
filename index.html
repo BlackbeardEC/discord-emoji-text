@@ -71,6 +71,26 @@
           for (i = 0; i < poop.length ;i++) {
             if(poop[i] === ' '){
               text += "  ";
+            }else if(poop[i] === '0'){// Yea I know this is crazy with all
+              text += ":zero: ";
+            }else if(poop[i] === '1'){// the else if's but a switch inside
+              text += ":one: ";
+            }else if(poop[i] === '2'){// an if(!isNaN) wasn't working... so
+              text += ":two: ";
+            }else if(poop[i] === '3'){// whatevs
+              text += ":three: ";
+            }else if(poop[i] === '4'){
+              text += ":four: ";
+            }else if(poop[i] === '5'){
+              text += ":five: ";
+            }else if(poop[i] === '6'){
+              text += ":six: ";
+            }else if(poop[i] === '7'){
+              text += ":seven: ";
+            }else if(poop[i] === '8'){
+              text += ":eight: ";
+            }else if(poop[i] === '9'){
+              text += ":nine: ";
             }else{
               text += ":regional_indicator_" + poop[i] + ": ";
             }
