@@ -91,6 +91,10 @@
               text += ":eight: ";
             }else if(poop[i] === '9'){
               text += ":nine: ";
+            }else if(poop[i] === '\r'){// now properly detects carriage return
+              text += "\r";
+            }else if(poop[i] === '\n'){// and new line/line feed
+              text += "\n";
             }else{
               text += ":regional_indicator_" + poop[i] + ": ";
             }
